@@ -1,0 +1,25 @@
+{
+  "name": "carpet-agent-bootstrap-template",
+  "version": "0.1.0",
+  "description": "Bootstrap template",
+  "main": "template/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Devcarpet/carpet-agent-bootstrap-template.git"
+  },
+  "author": "",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/Devcarpet/carpet-agent-bootstrap-template/issues"
+  },
+  "homepage": "https://github.com/Devcarpet/carpet-agent-bootstrap-template#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.4"
+  }
+}
