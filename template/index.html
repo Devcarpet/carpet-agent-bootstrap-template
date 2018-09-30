@@ -10,399 +10,662 @@
 
     <title>Hello, world!</title>
   </head>
+  
   <body>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<!--     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!--     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-     -->
-
-
-
-    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Company name</a>
-      <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
-      <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#">Sign out</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="container-fluid">
-      <div class="row">
-        <nav class="col-md-2 d-none d-md-block bg-dark sidebar">
-          <div class="sidebar-sticky">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  <span data-feather="home"></span>
-                  Dashboard <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="file"></span>
-                  Orders
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="shopping-cart"></span>
-                  Products
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="users"></span>
-                  Customers
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="bar-chart-2"></span>
-                  Reports
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="layers"></span>
-                  Integrations
-                </a>
-              </li>
-            </ul>
-
-            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+    -->
+    <nav class="navbar navbar-dark bg-dark sticky-top flex-md-nowrap p-0">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
+        <img src="images/avatar.png" width="30" height="30" alt="">
+        <span class="logo">CARPET AGENTS</span></a>
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        <ul class="navbar-nav px-3">
+          <li class="nav-item text-nowrap">
+            <a class="nav-link" href="#">Sign out</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container-fluid">
+        <div class="row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">
+                    <span data-feather="home"></span>
+                    Dashboard <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file"></span>
+                    Orders
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="shopping-cart"></span>
+                    Products
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="users"></span>
+                    Customers
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="bar-chart-2"></span>
+                    Reports
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="layers"></span>
+                    Integrations
+                  </a>
+                </li>
+              </ul>
+              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
               <span>Saved reports</span>
               <a class="d-flex align-items-center text-muted" href="#">
                 <span data-feather="plus-circle"></span>
               </a>
-            </h6>
-            <ul class="nav flex-column mb-2">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="file-text"></span>
-                  Current month
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="file-text"></span>
-                  Last quarter
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="file-text"></span>
-                  Social engagement
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="file-text"></span>
-                  Year-end sale
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
-          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-            <h1 class="h2">Dashboard</h1>
-            <div class="btn-toolbar mb-2 mb-md-0">
-              <div class="btn-group mr-2">
-                <button class="btn btn-sm btn-outline-secondary">Share</button>
-                <button class="btn btn-sm btn-outline-secondary">Export</button>
-              </div>
-              <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+              </h6>
+              <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Current month
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Last quarter
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Social engagement
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Year-end sale
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+              <h1 class="h2">Dashboard</h1>
+              <div class="btn-toolbar mb-2 mb-md-0">
+                <div class="btn-group mr-2">
+                  <button class="btn btn-sm btn-outline-secondary">Share</button>
+                  <button class="btn btn-sm btn-outline-secondary">Export</button>
+                </div>
+                <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
                 <span data-feather="calendar"></span>
                 This week
-              </button>
+                </button>
+              </div>
             </div>
-          </div>
+            <div class="row">
+              <div class="col-sm-12 mb-2">
+            <div class="card">
+              <div class="card-header">
+                Current Issues
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-striped table-sm">
+                    <thead>
+                      <tr>
+                        <th>KEY</th>
+                        <th>Summary</th>
+                        <th>Creator</th>
+                        <th>Created</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                        
+                          <tr>
+                            <td>XMPPSUP-4</td>
+                            <td>Something is really broken</td>
+                            <td>name@example.com</td>
+                            <td>2018-09-15T19:43:52.000+0000</td>
+                            <td>Escalated</td>
+                          </tr>
+                        
+                          <tr>
+                            <td>XMPPSUP-3</td>
+                            <td>My keyboard sucks</td>
+                            <td>user@example.com</td>
+                            <td>2018-09-05T19:15:53.000+0000</td>
+                            <td>Waiting for support</td>
+                          </tr>
+                        
+                          <tr>
+                            <td>XMPPSUP-1</td>
+                            <td>What am I looking at?</td>
+                            <td>other@example.com</td>
+                            <td>2018-08-21T17:44:25.000+0000</td>
+                            <td>Waiting for support</td>
+                          </tr>
+                        
+                      
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+  </div>
+            </div>  
+            <div class="row">
+              <div class="col-sm-6 mb-2">
+                <div class="card">
+                  <div class="card-header">
+                    Current Agents
+                  </div>
+              <div class="card-body">
 
-          <canvas class="my-4" id="myChart" width="900" height="380"></canvas>
-
-          <h2>Section title</h2>
-          <div class="table-responsive">
-            <table class="table table-striped table-sm">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                </tr>
-                <tr>
-                  <td>1,002</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>Integer</td>
-                  <td>nec</td>
-                  <td>odio</td>
-                  <td>Praesent</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>libero</td>
-                  <td>Sed</td>
-                  <td>cursus</td>
-                  <td>ante</td>
-                </tr>
-                <tr>
-                  <td>1,004</td>
-                  <td>dapibus</td>
-                  <td>diam</td>
-                  <td>Sed</td>
-                  <td>nisi</td>
-                </tr>
-                <tr>
-                  <td>1,005</td>
-                  <td>Nulla</td>
-                  <td>quis</td>
-                  <td>sem</td>
-                  <td>at</td>
-                </tr>
-                <tr>
-                  <td>1,006</td>
-                  <td>nibh</td>
-                  <td>elementum</td>
-                  <td>imperdiet</td>
-                  <td>Duis</td>
-                </tr>
-                <tr>
-                  <td>1,007</td>
-                  <td>sagittis</td>
-                  <td>ipsum</td>
-                  <td>Praesent</td>
-                  <td>mauris</td>
-                </tr>
-                <tr>
-                  <td>1,008</td>
-                  <td>Fusce</td>
-                  <td>nec</td>
-                  <td>tellus</td>
-                  <td>sed</td>
-                </tr>
-                <tr>
-                  <td>1,009</td>
-                  <td>augue</td>
-                  <td>semper</td>
-                  <td>porta</td>
-                  <td>Mauris</td>
-                </tr>
-                <tr>
-                  <td>1,010</td>
-                  <td>massa</td>
-                  <td>Vestibulum</td>
-                  <td>lacinia</td>
-                  <td>arcu</td>
-                </tr>
-                <tr>
-                  <td>1,011</td>
-                  <td>eget</td>
-                  <td>nulla</td>
-                  <td>Class</td>
-                  <td>aptent</td>
-                </tr>
-                <tr>
-                  <td>1,012</td>
-                  <td>taciti</td>
-                  <td>sociosqu</td>
-                  <td>ad</td>
-                  <td>litora</td>
-                </tr>
-                <tr>
-                  <td>1,013</td>
-                  <td>torquent</td>
-                  <td>per</td>
-                  <td>conubia</td>
-                  <td>nostra</td>
-                </tr>
-                <tr>
-                  <td>1,014</td>
-                  <td>per</td>
-                  <td>inceptos</td>
-                  <td>himenaeos</td>
-                  <td>Curabitur</td>
-                </tr>
-                <tr>
-                  <td>1,015</td>
-                  <td>sodales</td>
-                  <td>ligula</td>
-                  <td>in</td>
-                  <td>libero</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-<div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
-<div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
-<div class="p-3 mb-2 bg-success text-white">.bg-success</div>
-<div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
-<div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
-<div class="p-3 mb-2 bg-info text-white">.bg-info</div>
-<div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
-<div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
-<div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <div class="container">
-          <h1 class="display-3">Hello, world!</h1>
-          <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-        </div>
-      </div>
-
-      <div class="container">
-        <!-- Example row of columns -->
-        <div class="row">
-          <div class="col-md-4 bg-secondary">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-        </div>
-
-        <hr>
-        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">Primary card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-<div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">Secondary card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-<div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">Success card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">Danger card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-<div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">Warning card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-<div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">Info card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-<div class="card bg-light mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">Light card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">Dark card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-        </main>
-
-      </div> <!-- /container -->
-
+                
+                No agents current connected...
+                
+                </div>
+                </div>
+              </div>
     
+              <div class="col-sm-6 mb-2">
+            
+            <div class="card">
+              <div class="card-header">
+                Current Servers
+              </div>
+              <div class="card-body">
+
+                  <table class="table table-striped table-sm">
+
+                    <thead>
+                      <tr>
+                        <th>Title</th>
+                        <th>URL</th>
+                        <th>version</th>
+                        <th>Type</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+
+                                    
+                          <tr>
+                            <td>some JIRA</td>
+                            <td>https://example.com/jira</td>
+                            <td>7.8.1</td>
+                            <td>Server</td>
+                          </tr>
+                        
+                    </tbody>
+                    </table>
+
+            </div>
+            </div>
+        </div>
+            </div>
+      
+            <canvas class="my-4" id="myChart" width="900" height="380"></canvas>
+            <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+            <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+            <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+            <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+            <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+            <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+            <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+            <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+            <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+            <!-- Main jumbotron for a primary marketing message or call to action -->
+            <div class="jumbotron">
+              <div class="container">
+                <h1 class="display-3">Hello, world!</h1>
+                <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+                <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+              </div>
+            </div>
+            <div class="container">
+              <!-- Example row of columns -->
+              <div class="row">
+                <div class="col-md-4 bg-secondary">
+                  <h2>Heading</h2>
+                  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                  <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                  <h2>Heading</h2>
+                  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                  <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                  <h2>Heading</h2>
+                  <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                  <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <hr>
+              <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Primary card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Secondary card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Success card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Danger card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Warning card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Info card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card bg-light mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Light card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Dark card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <h1 class="page-header"><div class="crush">Category 1</div></h1>
+                </div>
+                <div class="row">
+                  
+                  <div class="col-md-10">
+                    
+                    <div class="table-responsive">
+                      
+                      <table class="table table-sm table-hover">
+                        <thead class="thead-default">
+                          
+                          <tr class="add-category-row">
+                            <th style="width: 30px;">
+                              <button class="btn-view-fund btn btn-default btn-xs  pull-left" type="button">
+                            <span data-feather="plus"></span
+                            </button>
+                          </th>
+                          
+                          
+                          <th colspan="2">Add Checklist</th>
+                          
+                          <th style="width: 70px;"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        
+                        <tr class="category-row">
+                          <th style="width: 30px;">
+                            <button class="btn-view-fund btn btn-default btn-xs  pull-left" type="button">
+                            <span data-feather="plus"></span>
+                            </button>
+                          </th>
+                          
+                          <th style="width: 30px;">
+                            <button class="btn-view-fund btn btn-default btn-xs  pull-left" type="button">
+                            <span data-feather="edit"></span>
+                            </button>
+                          </th>
+                          
+                          <th style="text-align: center;">Checklist1: MAKE SURE EVERYONE IS CLEAR FROM MOVING PARTS AND PROCEED WITH THE FOLLOWING:</th>
+                          
+                          <th style="text-align: right;">
+                            <button class="btn-view-fund btn btn-default btn-xs" type="button">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            </button>
+                          </th>
+                        </tr>
+                        
+                        <tr>
+                          <td>
+                            <button class="btn-view-fund btn btn-default btn-xs  pull-left" type="button">
+                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                            </button>
+                          </td>
+                          <td colspan="2">Put all controls in neutral position.</td>
+                          <td style="text-align: right;">
+                            <button class="btn-view-fund btn btn-default btn-xs" type="button">
+                            <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                            </button>
+                            <button class="btn-view-fund btn btn-default btn-xs" type="button">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            </button>
+                          </td>
+                        </tr>
+                        
+                        <tr>
+                          <td>
+                            <button class="btn-view-fund btn btn-default btn-xs  pull-left" type="button">
+                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                            </button>
+                          </td>
+                          <td colspan="2">Start drill.</td>
+                          
+                          <td style="text-align: right;">
+                            <button class="btn-view-fund btn btn-default btn-xs" type="button">
+                            <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                            </button>
+                            <button class="btn-view-fund btn btn-default btn-xs" type="button">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <button class="btn-view-fund btn btn-default btn-xs  pull-left" type="button">
+                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                            </button>
+                          </td>
+                          <td colspan="2">After warming up drill to a normal operating temperature proceed to check oil pressure and battery voltage.</td>
+                          
+                          <td style="text-align: right;">
+                            <button class="btn-view-fund btn btn-default btn-xs" type="button">
+                            <span class="glyphicon glyphicon-list green-bg" aria-hidden="true"></span>
+                            </button>
+                            <button class="btn-view-fund btn btn-default btn-xs" type="button">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            </button>
+                          </td>
+                        </tr>
+                        
+                        
+                        <!-- Questions Section -->
+                        <tr class="success">
+                          <td colspan="4">
+                            <button class="btn-view-fund btn btn-default btn-xs" type="button">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Question
+                            </button>
+                          </td>
+                        </tr>
+                        <tr class="warning">
+                          <td colspan="3">
+                            <div class="row q_row">
+                              <div class="col-lg-1"></div>
+                              <div class="col-lg-9">
+                                <span>Do you really need to do this?</span>
+                              </div>
+                              <!--
+                              <div class="col-lg-2">
+                                <div class="btn-group pull-right" role="group" aria-label="...">
+                                  <button type="button" class="btn btn-danger btn-xs">Good</button>
+                                  <button type="button" class="btn btn-default  btn-xs">UA</button>
+                                </div>
+                              </div>
+                              -->
+                              
+                            </div>
+                          </td>
+                          <td style="text-align: right;">
+                            <button class="btn-view-fund btn btn-default btn-xs" type="button">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr class="warning">
+                          <td colspan="3">
+                            <div class="row q_row">
+                              <div class="col-lg-1"></div>
+                              <div class="col-lg-9">
+                                <span>Do you really need to do this?</span>
+                              </div>
+                              <!--
+                              <div class="col-lg-2">
+                                <div class="btn-group pull-right" role="group" aria-label="...">
+                                  <button type="button" class="btn btn-default btn-xs">Good</button>
+                                  <button type="button" class="btn btn-danger btn-xs">UA</button>
+                                </div>
+                              </div>
+                              -->
+                            </div>
+                          </td>
+                          <td style="text-align: right;">
+                            <button class="btn-view-fund btn btn-default btn-xs" type="button">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            </button>
+                          </td>
+                        </tr>
+                        
+                        <!-- end question section -->
+                        
+                        <tr>
+                          <td>
+                            <button class="btn-view-fund btn btn-default btn-xs  pull-left" type="button">
+                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                            </button>
+                          </td>
+                          <td colspan="2">Visually inspect equipment for obvious oil leaks.</td>
+                          
+                          <td style="text-align: right;">
+                            <button class="btn-view-fund btn btn-default btn-xs" type="button">
+                            <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                            </button>
+                            <button class="btn-view-fund btn btn-default btn-xs" type="button">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            </button>
+                          </td>
+                        </tr>
+                        
+                        <tr class="category-row">
+                          <th style="width: 30px;">
+                            <button class="btn-view-fund btn btn-default btn-xs  pull-left" type="button">
+                            <span class="glyphicon glyphicon-plus green" aria-hidden="true"></span>
+                            </button>
+                          </th>
+                          
+                          <th style="width: 30px;">
+                            <button class="btn-view-fund btn btn-default btn-xs  pull-left" type="button">
+                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                            </button>
+                          </th>
+                          
+                          <th style="text-align: center;">Checklist 2: SHUTDOWN PROCEDURE (IN EVENT OF VISIBLE OIL LEAKS)</th>
+                          
+                          <th style="text-align: right;">
+                            <button class="btn-view-fund btn btn-default btn-xs" type="button">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            </button>
+                          </th>
+                        </tr>
+                        
+                        <tr>
+                          <td>
+                            <button class="btn-view-fund btn btn-default btn-xs  pull-left" type="button">
+                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                            </button>
+                          </td>
+                          <td colspan="2">Immediately turn off drill if a major leak is present and follow the Emergency
+                          Spill Response Plan.</td>
+                          
+                          <td style="text-align: right;">
+                            <button class="btn-view-fund btn btn-default btn-xs" type="button">
+                            <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                            </button>
+                            <button class="btn-view-fund btn btn-default btn-xs" type="button">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <button class="btn-view-fund btn btn-default btn-xs  pull-left" type="button">
+                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                            </button>
+                          </td>
+                          <td colspan="2">In the event of a small oil leak, allow motor to cool for 5 minutes before turning
+                          off.</td>
+                          <td style="text-align: right;">
+                            <button class="btn-view-fund btn btn-default btn-xs" type="button">
+                            <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                            </button>
+                            <button class="btn-view-fund btn btn-default btn-xs" type="button">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            </button>
+                          </td>
+                        </tr>
+                        
+                        <tr>
+                          <td>
+                            <button class="btn-view-fund btn btn-default btn-xs  pull-left" type="button">
+                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                            </button>
+                          </td>
+                          <td colspan="2">De­energize drilling equipment prior to repairs.</td>
+                          <td style="text-align: right;">
+                            <button class="btn-view-fund btn btn-default btn-xs" type="button">
+                            <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                            </button>
+                            <button class="btn-view-fund btn btn-default btn-xs" type="button">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            </button>
+                          </td>
+                        </tr>
+                        
+                        <tr>
+                          <td>
+                            <button class="btn-view-fund btn btn-default btn-xs  pull-left" type="button">
+                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                            </button>
+                          </td>
+                          <td colspan="2">Follow proper lockout/tagout procedures to ensure equipment is safe for repair
+                          (refer to WI­59 Safety – Lock Out, Tag Out; Surface).</td>
+                          
+                          <td style="text-align: right;">
+                            <button class="btn-view-fund btn btn-default btn-xs" type="button">
+                            <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                            </button>
+                            <button class="btn-view-fund btn btn-default btn-xs" type="button">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            </button>
+                          </td>
+                        </tr>
+                        
+                        <tr>
+                          <td>
+                            <button class="btn-view-fund btn btn-default btn-xs  pull-left" type="button">
+                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                            </button>
+                          </td>
+                          <td colspan="2">Report any defects on the machine to your supervisor and include in this
+                          report.</td>
+                          
+                          <td style="text-align: right;">
+                            <button class="btn-view-fund btn btn-default btn-xs" type="button">
+                            <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                            </button>
+                            <button class="btn-view-fund btn btn-default btn-xs" type="button">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            </button>
+                          </td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+                    
+                  </div>
+                </div>
+              </div>
+              
+              
+            </div>
+          </main>
+          </div> <!-- /container -->
+          
+        </div>
       </div>
-    </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-
-    <!-- Icons -->
-    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
-    <script>
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+      <script src="../../assets/js/vendor/popper.min.js"></script>
+      <script src="../../dist/js/bootstrap.min.js"></script>
+      <!-- Icons -->
+      <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+      <script>
       feather.replace()
-    </script>
-
-    <!-- Graphs -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-    <script>
+      </script>
+      <!-- Graphs -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+      <script>
       var ctx = document.getElementById("myChart");
       var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          datasets: [{
-            data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
-            lineTension: 0,
-            backgroundColor: 'transparent',
-            borderColor: '#007bff',
-            borderWidth: 4,
-            pointBackgroundColor: '#007bff'
-          }]
-        },
-        options: {
-          scales: {
-            yAxes: [{
-              ticks: {
-                beginAtZero: false
-              }
-            }]
-          },
-          legend: {
-            display: false,
-          }
-        }
+      type: 'line',
+      data: {
+      labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      datasets: [{
+      data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+      lineTension: 0,
+      backgroundColor: 'transparent',
+      borderColor: '#007bff',
+      borderWidth: 4,
+      pointBackgroundColor: '#007bff'
+      }]
+      },
+      options: {
+      scales: {
+      yAxes: [{
+      ticks: {
+      beginAtZero: false
+      }
+      }]
+      },
+      legend: {
+      display: false,
+      }
+      }
       });
-    </script>
+      </script>
+    </body>
 
-
-  </body>
 </html>
